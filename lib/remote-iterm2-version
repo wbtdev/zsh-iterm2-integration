@@ -1,0 +1,2 @@
+local target_url="${1}" grep_str="${2}"
+curl -sSL "$target_url" | grep -o "$grep_str" | cut -d'=' -f2

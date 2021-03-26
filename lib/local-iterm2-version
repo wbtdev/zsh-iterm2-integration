@@ -1,0 +1,2 @@
+local grep_str="${1}" filepath="${2}"
+grep -o "$grep_str" "$filepath" | cut -d'=' -f2
